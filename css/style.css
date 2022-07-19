@@ -1,0 +1,135 @@
+/* css reset */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+:root{
+    --primary: #fff;
+    --secondary: #fafafa;
+    --accent: #5584AC;
+    --brand: #3a3939;
+    
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--secondary);
+    color: var(--brand);
+    font-family: 'Crimson Text', serif;
+}
+
+
+
+/* header and nav */
+header{
+    width: 100%;
+    background-color: var(--primary);
+}
+header nav{
+    width: 1192px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+}
+header nav #logo{
+   letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
+    color: var(--brand);
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul img{
+     width: 24px;
+     margin-left: 20px;
+     cursor: pointer;
+}
+.profile-picture{
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+/* main starts */
+main{
+    padding-top: 30px;
+    width: 1000px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+/* post style */
+.post-container{
+    width: 65%;
+}
+.post{
+    width: 100%;
+    background-color: var(--primary);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+.post .post-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 3px;
+}
+.post .post-header .post-profile-user{
+    display: flex;
+    align-items: center;
+}
+.post .post-header .post-profile-user img{
+   width: 40px;
+   height: 40px;
+   border: 2px solid var(--accent);
+   border-radius: 50%;
+   margin-left: 5px;
+}
+.post .post-header .post-user-name{
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 10px;
+    text-transform: lowercase;
+}
+.post .post-header .post-date{
+    color: var(--brand);
+    margin-right: 10px;
+    font-size: 14px;
+}
+.post .post-image{
+    width: 100%;
+    height: auto;
+}
+.post .post-social{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.post .post-social ul{
+    display: flex;
+    list-style: none;
+}
+.post .post-social ul li{
+    width: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.post .post-social .like-count{
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.post .post-bottom .caption{
+    margin-left: 10px;
+    margin-top: 10px;
+    text-transform: lowercase;
+}
